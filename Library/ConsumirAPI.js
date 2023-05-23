@@ -5,7 +5,6 @@ const url = `${API}${id}`
 return fetch(url)
     .then(respuesta => respuesta.json())
     .then(datos => {
-    console.log(datos)
     return datos;
     })
     .catch(error => {

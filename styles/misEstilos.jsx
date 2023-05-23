@@ -7,7 +7,6 @@ const scale = width / 400;
 export const styles = ScaledSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'black',
   },
@@ -17,10 +16,10 @@ export const styles = ScaledSheet.create({
     width: width - (1 * scale),
   },
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: '#f0f0f040',
     borderRadius: '10@s',
     padding: '10@s',
-    margin: '10@s',
+    margin: '5@s',
     width: (width - (40 * scale)) / 2,
     shadowColor: '#000',
     shadowOffset: {
@@ -33,8 +32,8 @@ export const styles = ScaledSheet.create({
     alignItems: 'center',
   },
   image: {
-    width: '100@s',
-    height: '100@s',
+    width: '150@s',
+    height: '150@s',
   },
   name: {
     fontSize: '18@s',
@@ -54,6 +53,25 @@ export const styles = ScaledSheet.create({
     marginTop: '10@s',
     width: '300@s',
     height: '110@s',
-    resizeMode: 'cover'
+    alignSelf: 'center',
   },
+  pokeimgCenter: {
+    marginTop: '155@s',
+    width: '300@s',
+    height: '110@s',
+    alignSelf: 'center',
+  },
+  pokeFondo:{
+    flex: 1,
+    resizeMode: 'center',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  searchBar: {
+    borderColor: '#2d6ab3',
+    borderWidth: '2@s',
+    borderRadius: '7@s',
+    color: '#ffcc01',
+    textAlign: 'center'
+  }
 });

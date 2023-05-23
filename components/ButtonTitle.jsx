@@ -1,4 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { ScaledSheet } from 'react-native-size-matters';
 import React from 'react'
 
 const ButtonTitle = ({ title, action }) => {
@@ -11,12 +12,13 @@ const ButtonTitle = ({ title, action }) => {
 
 export default ButtonTitle
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   container: {
-    margin: 10,
-    padding: 10,
-    backgroundColor: '#7320d4',
-    borderRadius: 5,
+    margin: '10@s',
+    alignSelf: 'center',
+    padding: '10@s',
+    backgroundColor: '#2774ba',
+    borderRadius: '5@s',
     alignItems: 'center'
   },
   title: {
